@@ -1,0 +1,12 @@
+﻿ To Update/Delete medication:
+ - click and hold on the medication required
+
+To Add medication:
+- click the "ADD" button and enter in all medication details
+
+When a notification appears:
+- click on the notification to confirm medication intake
+- if you click "Yes" the notification will appear the next day
+- if you click "No" the notification will reappear until "Yes" is clicked.
+
+More Help content to come!

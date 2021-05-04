@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.meditrack">
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="MediTracker"
+       >
+        <activity
+            android:name="com.example.meditrack.MedsActivity"
+            android:label="@string/app_name">
+
+        </activity>
+        <activity android:name="com.example.meditrack.TableManipulationActivity" />
+
+        <activity android:name=".HomeActivity" />
+
+
+        <receiver
+            android:name="com.example.meditrack.AlarmClass"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name="com.example.meditrack.SplashScreen">
+
+        </activity>
+        <activity android:name="com.example.meditrack.AuthActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
